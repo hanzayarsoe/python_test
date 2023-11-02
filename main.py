@@ -1,12 +1,15 @@
 import tkinter as tk
-from PIL import Image, ImageTk
-
-image1 = Image.open("images/nature.jpg")
-image1 = image1.resize((500,500))
 
 root = tk.Tk()
-img = ImageTk.PhotoImage(image1)
-label = tk.Label(root, image=img)
+root.title("Entry Widget")
+
+label = tk.Label(root, text="Name: ")
+entry = tk.Entry(root)
+
+entry.insert(0,"Enter your name")
+entry.config(state="disabled")
+
 label.pack()
+entry.pack()
 
 root.mainloop()
