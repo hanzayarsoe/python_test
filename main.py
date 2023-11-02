@@ -1,5 +1,10 @@
-from translate import Translator
+import tkinter as tk
 
-translator = Translator(from_lang="english", to_lang="german")
-translation = translator.translate("This is useful library")
-print(translation)
+root = tk.Tk()
+root.title("label testing")
+
+label = tk.Label(root, text="label in Tkinter",bg="lightgreen", font="arial",padx=20,pady=50)
+
+label.pack()
+
+root.mainloop()
