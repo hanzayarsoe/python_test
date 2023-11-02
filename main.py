@@ -1,15 +1,12 @@
 import tkinter as tk
 
 root = tk.Tk()
-root.title("Entry Widget")
+root.title("Button widget")
 
-label = tk.Label(root, text="Name: ")
-entry = tk.Entry(root)
-
-entry.insert(0,"Enter your name")
-entry.config(state="disabled")
-
-label.pack()
-entry.pack()
-
+tk.Button(root,text="Click Me!",relief="raised").pack()
+tk.Button(root,text="Click Me!",relief="sunken").pack()
+tk.Button(root,text="Click Me!",relief="flat").pack()
+tk.Button(root,text="Click Me!",relief="ridge").pack()
+tk.Button(root,text="Click Me!",relief="groove").pack()
+tk.Button(root,text="Click Me!",relief="solid").pack()
 root.mainloop()
